@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "HTML5 Assessor",
+    "version": "0.0",
+    "description": "DevTools extension for checking use of various modern web technologies in inspected pages.",
+    "author": "Ville Skyttä <ville.skytta@iki.fi>",
+
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "64": "icon64.png",
+        "128": "icon128.png",
+        "256": "icon256.png",
+        "512": "icon512.png"
+    },
+
+    "devtools_page": "devtools_page.html",
+
+    "minimum_chrome_version": "41"
+}

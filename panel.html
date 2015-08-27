@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Assessor</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      table { max-width: 100%; }
+      th { max-width: 50%; }
+    </style>
+  </head>
+  <body>
+
+    <div style="text-align: center">
+      <button id="reload">Reload</button>
+      <button id="report">Report</button>
+      <button id="clear">Clear session data</button>
+    </div>
+
+    <script src="panel.js"></script>
+
+    <div id="results" style="display: none">
+
+      <pre id="error"></pre>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Current</th>
+            <th>Session</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td colspan="2">
+              Doctypes
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre id="doctypes-current"></pre>
+            </td>
+            <td>
+              <pre id="doctypes-session"></pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              Accessed script objects
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre id="accessed-current"></pre>
+            </td>
+            <td>
+              <pre id="accessed-session"></pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              HTML5 elements
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre id="elements-current"></pre>
+            </td>
+            <td>
+              <pre id="elements-session"></pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              HTML5 attributes
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre id="attributes-current"></pre>
+            </td>
+            <td>
+              <pre id="attributes-session"></pre>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              HTML5 event listeners
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre id="listeners-current"></pre>
+            </td>
+            <td>
+              <pre id="listeners-session"></pre>
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+  </body>
+</html>

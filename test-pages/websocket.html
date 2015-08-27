@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h1>H5A WebSocket test page</h1>
+    <script>
+    function testWebSocket() {
+        var ws = new WebSocket("ws://echo.websocket.org/");
+        console.log("new WebSocket(...) called");
+        ws.close();
+    }
+    testWebSocket();
+    </script>
+    <button onclick="testWebSocket()">Click to test after load</button>
+  </body>
+</html>

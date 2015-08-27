@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1>H5A Web Storage test page</h1>
+    <script>
+    function testWebStorage() {
+        if (localStorage.foo && !isNaN(localStorage.foo))
+            localStorage.foo++;
+        else
+            localStorage.foo = 1;
+        console.log("localStorage.foo = %s", localStorage.foo);
+        if (sessionStorage.foo && !isNaN(sessionStorage.foo))
+            sessionStorage.foo++;
+        else
+            sessionStorage.foo = 1;
+        console.log("sessionStorage.foo = %s", sessionStorage.foo);
+    }
+    testWebStorage();
+    </script>
+    <button onclick="testWebStorage()">Click to test after load</button>
+  </body>
+</html>

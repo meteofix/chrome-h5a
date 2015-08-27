@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <h1>H5A Web Workers test page</h1>
+    <script>
+    function testWebWorkers() {
+        try {
+            var worker = new Worker("webworkers.js");
+            worker.terminate();
+        }
+        catch (err) {
+            // Possibly a SecurityError due to origin, irrelevant for us
+        }
+        finally {
+            console.log("new Worker(...) called");
+        }
+
+        try {
+            var worker = new SharedWorker("webworkers.js", "shared-worker");
+            worker.terminate();
+        }
+        catch (err) {
+            // Possibly a SecurityError due to origin, irrelevant for us
+        }
+        finally {
+            console.log("new SharedWorker(...) called");
+        }
+    }
+    testWebWorkers();
+    </script>
+    <button onclick="testWebWorkers()">Click to test after load</button>
+  </body>
+</html>

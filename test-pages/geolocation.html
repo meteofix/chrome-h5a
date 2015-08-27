@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h1>H5A Geolocation test page</h1>
+    <script>
+    function testGeolocation() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            console.log("getCurrentPosition() called");
+        });
+    };
+    testGeolocation();
+    </script>
+    <button onclick="testGeolocation()">Click to test after load</button>
+  </body>
+</html>
